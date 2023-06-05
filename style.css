@@ -1,0 +1,118 @@
+body{
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%) ;
+    
+    /* font-size: 16px; */
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    
+}
+.attribution {
+     font-size: 11px; text-align: center; 
+    }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+ .container{
+    display: flex;
+    flex-direction:row;
+    margin: 130px auto;
+    
+ }
+ .leftcontainer{
+    color: white;
+    margin: 50px ;
+    
+ }
+ #leftheading{
+    font-weight: 600px;
+    font-size: 50px;
+ }
+ .rightcontainer{
+    color: white;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+ }
+ #rightfirstinputbox{
+    padding: 10px;
+    margin: 10px;
+    background: hsl(247, 54%, 50%) ;
+    width: 330px;
+    border: 8px;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    
+ }
+ .formcontainer{
+    background: white;
+    height: 325px;
+    text-align: center;
+    border: 4px;
+    border-radius: 6px;
+    padding: 10px;
+    
+ }
+
+ .formcontainer >input{
+    padding: 8px;
+    margin: 13px;
+    width: 270px;
+    color: white;
+   
+    
+
+ }
+
+ .formcontainer > p{
+   color: hsl(0, 100%, 74%) ;
+   margin: 0;
+   font-size: 8px;
+   text-align: right;
+   display: none;
+   padding-right: 11px;
+ }
+ #submitbutton{
+    padding: 8px;
+    margin: 13px;
+    width: 290px;
+    color: white;
+    background: hsl(154, 59%, 51%);
+    border: 2px;
+    border-radius: 4px;
+    font-size: 10px;
+ }
+
+ .rightcontainer > p{
+    font-size: 9px;
+    padding: 2px;
+    text-align: center;
+ }
+
+ .error{
+   border: 2px solid hsl(0, 100%, 74%) ;
+   background-image: url(./images/icon-error.svg);
+   background-repeat: no-repeat;
+   background-position: right;
+ }
+
+ 
+@media only screen and (max-width:600px){
+  .container{
+   flex-direction: column;
+  }
+  .rightcontainer{
+   margin: auto;
+  }
+  #rightfirstinputbox{
+   height: 50px;
+  }
+  #submitbutton{
+   height: 50px;
+  }
+}
