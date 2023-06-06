@@ -21,13 +21,14 @@ const passwordError = document.getElementById("passworderror");
 
 
 submitBtn.addEventListener('click',(e)=>{
-    if(firstName.value === ""){
+    let firstNameValue = firstName.value;
+    if(firstNameValue === ""){
         firstNameError.style.display="block";
         firstName.classList.add("error");
         
     }
 
-    
+        
     if(lastName.value === ""){
         lastNameError.style.display="block";
         lastName.classList.add("error");
@@ -58,4 +59,26 @@ submitBtn.addEventListener('click',(e)=>{
 
 
         
+})
+
+firstName.addEventListener('click',(e)=>{
+    firstName.classList.remove("error")
+    firstNameError.style.display="none";
+
+})
+
+lastName.addEventListener('click', (e)=>{
+    lastName.classList.remove("error");
+    lastNameError.style.display="none";
+})
+
+email.addEventListener('click',(e)=>{
+    email.classList.remove("error");
+    emailError.style.display("none");
+})
+
+password.addEventListener('click', (e) =>{
+    password.classList.remove("error");
+    passwordError.style.display="none";
+
 })
